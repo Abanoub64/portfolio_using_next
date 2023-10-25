@@ -36,6 +36,7 @@ function Contact() {
       <form
         action={async (FormData) => {
           await senderEmail(FormData);
+          alert("Email send successfully!");
         }}
         className="mt-10 p-4   flex flex-col gap-2 "
       >
