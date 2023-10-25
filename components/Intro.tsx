@@ -8,8 +8,10 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInview } from "@/lib/hooks";
+import { useActiveSectioncontext } from "@/Context/active-section-context";
 
 export default function Intro() {
+  const { setTimeOfLastClick, setActiveSection } = useActiveSectioncontext();
   const { ref } = useSectionInview("Home");
   return (
     <section
@@ -66,6 +68,10 @@ export default function Intro() {
         className="flex  px-4 text-lg font-medium sm:flex-row flex-col justify-center items-center gap-2"
       >
         <Link
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
           className="  group bg-gray-800 text-white px-7 py-3 flex items-center gap-2  outline-none  hover:scale-110 hover:bg-gray-950  transition-all active:scale-105 rounded-full"
           href="#contact"
         >
@@ -77,21 +83,21 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download={true}
-          className="bg-white outline-none  group hover:scale-110   transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center cursor-pointer border border-black/10 gap-2 "
+          className="bg-white outline-none  group hover:scale-110   transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center cursor-pointer borderblack gap-2 "
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition-all " />
         </a>
         <a
           target="_blank"
-          className="bg-white outline-none border border-black/10 hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
+          className="bg-white outline-none borderblack hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
         >
           <BsLinkedin />
         </a>
         <a
           href="https://www.google.com"
           target="_blank"
-          className="bg-white text-[1.5rem] outline-none  hover:scale-110 border border-black/10  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
+          className="bg-white text-[1.5rem] outline-none  hover:scale-110 borderblack  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
         >
           <FaGithubSquare />
         </a>
