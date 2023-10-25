@@ -2,11 +2,12 @@
 
 import React from "react";
 import Sectionheading from "./Sectionheading";
-import Submitbtn from "@/components/submit-btn";
+// import Submitbtn from "@/components/submit-btn";
 import { motion } from "framer-motion";
 import { useSectionInview } from "@/lib/hooks";
 import { senderEmail } from "@/actions/serverAction";
-import toast from "react-hot-toast/headless";
+import { FaPaperPlane } from "react-icons/fa";
+// import toast from "react-hot-toast/headless";
 
 function Contact() {
   const { ref } = useSectionInview("Contact");
@@ -53,7 +54,13 @@ function Contact() {
           maxLength={500}
           className="h-52 borderblack  p-4  my-3 rounded-lg"
         />
-        <Submitbtn />
+        <button
+          className="h-[3rem] hover:scale-110 hover:bg-gray-950  transition-all active:scale-105 group w-[8rem] justify-center items-center flex gap-2 text-white rounded-full outline-none bg-gray-900  disabled:scale-100 disabled:bg-opacity-65"
+          type="submit"
+        >
+          Submit{" "}
+          <FaPaperPlane className="   group-hover:-translate-y-1  group-hover:translate-x-1 text-xs opacity-75 transition-all" />
+        </button>
       </form>
     </motion.section>
   );
