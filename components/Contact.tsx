@@ -34,13 +34,7 @@ function Contact() {
       </p>
       <form
         action={async (FormData) => {
-          const { data, error } = await senderEmail(FormData);
-          if (error) {
-            toast.error(error);
-            return;
-          }
-          toast.success("Email sent successfully!");
-          console.log(data);
+          await senderEmail(FormData);
         }}
         className="mt-10 p-4   flex flex-col gap-2 "
       >
