@@ -2,17 +2,27 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import biophoto from "../public/picofme.png";
-import { motion } from "framer-motion";
+import { animate, motion, useAnimate } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInview } from "@/lib/hooks";
 import { useActiveSectioncontext } from "@/Context/active-section-context";
+import DraggableDiv from "./Daggablediv";
 
 export default function Intro() {
   const { setTimeOfLastClick, setActiveSection } = useActiveSectioncontext();
   const { ref } = useSectionInview("Home");
+  const [frame, animate] = useAnimate();
+  const waveFrames: number[] = [0, 20, -10, 15, -5, 10, 0];
+
+  function wave() {
+    animate(
+      waveFrames.map((rotation, index) => [frame.current, { rotate: rotation }])
+    );
+  }
+
   return (
     <section
       ref={ref}
@@ -29,15 +39,7 @@ export default function Intro() {
               duration: 0.3,
             }}
           >
-            <Image
-              priority={true}
-              className="rounded-full w-24   h-24 shadow-xl object-cover  border-[6px] border-white"
-              width={192}
-              height={192}
-              quality={95}
-              alt="biophoto"
-              src={biophoto}
-            />
+            <DraggableDiv />
           </motion.div>
           <motion.span
             initial={{ opacity: 0, scale: 0 }}
@@ -48,7 +50,9 @@ export default function Intro() {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="text-2xl  bottom-0 right-0 absolute "
+            ref={frame}
+            onClick={wave}
+            className="text-2xl  z-30 cursor-pointer bottom-0 right-0 absolute "
           >
             👋
           </motion.span>
@@ -83,21 +87,21 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download={true}
-          className="bg-white outline-none  group hover:scale-110   transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center cursor-pointer borderblack gap-2 "
+          className="bg-white outline-none  group hover:scale-110   transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center cursor-pointer borderblack gap-2 dark:text-white/60 dark:bg-white/20 "
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition-all " />
         </a>
         <a
           target="_blank"
-          className="bg-white outline-none borderblack hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
+          className="bg-white dark:text-white/60  outline-none borderblack hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full dark:bg-white/20 text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
         >
           <BsLinkedin />
         </a>
         <a
           href="https://www.google.com"
           target="_blank"
-          className="bg-white text-[1.5rem] outline-none  hover:scale-110 borderblack  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
+          className="bg-white  dark:text-white/60 text-[1.5rem] outline-none  hover:scale-110 borderblack dark:bg-white/20  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
         >
           <FaGithubSquare />
         </a>

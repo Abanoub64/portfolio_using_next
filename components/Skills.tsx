@@ -42,7 +42,7 @@ function Skills() {
               once: true,
             }}
             custom={index}
-            className="   text-gray-800 font-medium  bg-white border border-black/5 py-3  rounded-lg px-4"
+            className="  dark:bg-white/10 dark:text-white/80  text-gray-800 font-medium  bg-white border border-black/5 py-3  rounded-lg px-4"
             key={index}
           >
             {skills}

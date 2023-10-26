@@ -11,7 +11,7 @@ function SectionDivider() {
       transition={{
         delay: 0.2,
       }}
-      className=" bg-gray-200 my-24 h-16 w-1  hidden sm:block"
+      className=" bg-gray-200 dark:bg-opacity-20 my-24 h-16 w-1  hidden sm:block"
     ></motion.div>
   );
 }

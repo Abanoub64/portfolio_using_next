@@ -9,6 +9,8 @@ export const senderEmail = async (formData: FormData) => {
   const message = formData.get("message");
   const senderEmail = formData.get("senderEmail");
 
+  let data;
+
   if (!validateString(senderEmail, 500)) {
     return "Invalied senderE mail";
   }
@@ -16,7 +18,7 @@ export const senderEmail = async (formData: FormData) => {
     return "Invalied message";
   }
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: " contect form <onboarding@resend.dev>",
       to: "abanoubmilad64@gmail.com",
       reply_to: senderEmail as string,
