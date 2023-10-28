@@ -44,7 +44,7 @@ function Contact() {
       >
         <input
           name="senderEmail"
-          className="h-14  dark:bg-white  dark:focus:bg-opacity-100 transition-all dark:outline-none dark:bg-opacity-80 px-4 rounded-lg borderblack"
+          className="h-14  dark:bg-white dark:text-black/50  dark:focus:bg-opacity-100 transition-all dark:outline-none dark:bg-opacity-80 px-4 rounded-lg borderblack"
           placeholder="Your email"
           type="email"
           required
