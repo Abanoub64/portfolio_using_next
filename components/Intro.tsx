@@ -95,13 +95,14 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition-all " />
         </a>
         <a
+          href="https://www.linkedin.com/in/abanoub-milad-7941a020a/"
           target="_blank"
           className="bg-white dark:text-white/60  outline-none borderblack hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full dark:bg-white/20 text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
         >
           <BsLinkedin />
         </a>
         <a
-          href="https://www.google.com"
+          href="https://github.com/Abanoub64/"
           target="_blank"
           className="bg-white  dark:text-white/60 text-[1.5rem] outline-none  hover:scale-110 borderblack dark:bg-white/20  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
         >
