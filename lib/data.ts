@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import Netflex from "@/public/Netflex.png";
+
 
 export const links = [
   {
@@ -58,25 +60,45 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    title: "My Portfolio",
+  description: "I designed and developed this portfolio to showcase my skills and projects as a Fullstack MERN Developer. Built with modern technologies, it features seamless animations, responsive design, and email integration for contact forms.",
+  tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React Email", "Resend", "Vercel"]
+    ,imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "St-demiana",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Developed a comprehensive website for a local church to manage parishioner data, including complex yet user-friendly forms for data collection and user access levels for administrators and staff. Built with a scalable cloud database to ensure reliability and performance as the church grows. The system streamlines communication, data management, and reporting for the church community.",
+    tags: ["React", "TypeScript", "Tailwind", "Redux",
+      "Express.js",
+      "MongoDB",
+      "Formik",
+      "Yup",
+      "Authentication",
+      "Role-Based Access Control",
+      "Excel Export",
+      "File Download",
+      "React Query",],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "TRVL",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Built a fully responsive travel agency website, Features dynamic content,  and a mobile-first design for seamless user experiences",
+    tags: [ "React",
+      "React Router",
+    "Material ui",
+  "Netlify"],
     imageUrl: wordanalyticsImg,
+  },
+  {
+  title: "Netflix Clone",
+    description: "Developed a Netflix-inspired streaming platform with dynamic content fetched from APIs. Features include user authentication, movie/show browsing, search functionality, and responsive design for seamless viewing across devices.",    tags: [ "React",
+      "Axios",
+      "Movie Trailer",
+      "React Router ",
+      "React YouTube"],
+    imageUrl: Netflex,
   },
 ] as const;
 
@@ -93,11 +115,10 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Resend",
+  "Postman",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "SQL",
+  "MySQL",
   "Framer Motion",
 ] as const;
