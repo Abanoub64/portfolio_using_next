@@ -63,8 +63,50 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium sm:text-4xl !leading-[1.5]"
       >
-        Hi, i'm <span className="font-bold">Abanoub</span> a software engineer
-      </motion.p>
+<section id="about" className="py-12 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+          About Me
+        </h2>
+        <div className="max-w-2xl mx-auto text-center">
+          {/* Attractive Lines */}
+          <p className="text-lg text-gray-600 mb-4">
+            I'm a <span className="font-semibold text-blue-600">passionate Fullstack MERN Developer</span> with a strong foundation in building web applications and a drive to create solutions that make a difference.
+          </p>
+          <p className="text-lg text-gray-600 mb-8">
+            As someone who thrives on <span className="font-semibold text-blue-600">solving problems</span> and <span className="font-semibold text-blue-600">learning new technologies</span>, I'm excited to bring my creativity and dedication to a dynamic team.
+          </p>
+
+          {/* Skills Overview */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Frontend Development
+              </h3>
+              <p className="text-gray-600">
+                I enjoy crafting intuitive and responsive user interfaces using React, Tailwind CSS, and JavaScript.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Backend Development
+              </h3>
+              <p className="text-gray-600">
+                I'm skilled in building secure and scalable backend systems with Node.js, Express, and MongoDB.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                Continuous Learner
+              </h3>
+              <p className="text-gray-600">
+                I'm always eager to learn new technologies and improve my skills to stay ahead in the ever-evolving tech landscape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>      </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
