@@ -62,24 +62,23 @@ export const projectsData = [
   {
     title: "My Portfolio",
   description: "I designed and developed this portfolio to showcase my skills and projects as a Fullstack MERN Developer. Built with modern technologies, it features seamless animations, responsive design, and email integration for contact forms.",
-  tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React Email", "Resend", "Vercel"]
+  tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "React Email", "Resend",]
     ,imageUrl: corpcommentImg,
+    url:'https://portfolio-using-next.vercel.app/'
   },
   {
     title: "St-demiana",
     description:
-      "Developed a comprehensive website for a local church to manage parishioner data, including complex yet user-friendly forms for data collection and user access levels for administrators and staff. Built with a scalable cloud database to ensure reliability and performance as the church grows. The system streamlines communication, data management, and reporting for the church community.",
-    tags: ["React", "TypeScript", "Tailwind", "Redux",
+"Built a church website for managing parishioner data with user-friendly forms, access levels, and a scalable cloud database. Streamlines communication, data management, and reporting for the church community."   , tags: [ "TypeScript", "Tailwind",
       "Express.js",
-      "MongoDB",
       "Formik",
-      "Yup",
       "Authentication",
       "Role-Based Access Control",
       "Excel Export",
       "File Download",
       "React Query",],
     imageUrl: rmtdevImg,
+        url:'https://st-demiana-client.vercel.app/'
   },
   {
     title: "TRVL",
@@ -90,6 +89,7 @@ export const projectsData = [
     "Material ui",
   "Netlify"],
     imageUrl: wordanalyticsImg,
+        url:'https://serene-quokka-b7df76.netlify.app/'
   },
   {
   title: "Netflix Clone",
@@ -99,6 +99,7 @@ export const projectsData = [
       "React Router ",
       "React YouTube"],
     imageUrl: Netflex,
+        url:'https://lambent-granita-169444.netlify.app/'
   },
 ] as const;
 
