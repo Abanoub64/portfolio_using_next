@@ -24,7 +24,7 @@ function About() {
         <span className="italic">
           {" "}
           modern, scalable, and user-friendly applications
-        </span>
+        </span>{" "}
         using both the <span className="font-bold">MERN</span> and{" "}
         <span className="font-bold">.NET</span> ecosystems.
         <br />I enjoy crafting{" "}
