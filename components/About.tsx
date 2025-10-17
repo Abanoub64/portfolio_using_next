@@ -23,7 +23,7 @@ function About() {
         about building
         <span className="italic">
           {" "}
-          modern, scalable, and user-friendly web applications
+          modern, scalable, and user-friendly applications
         </span>
         using both the <span className="font-bold">MERN</span> and{" "}
         <span className="font-bold">.NET</span> ecosystems.
