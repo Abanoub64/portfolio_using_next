@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import Sectionheading from "./Sectionheading";
 import { motion } from "framer-motion";
 import { useSectionInview } from "@/lib/hooks";
@@ -13,7 +13,7 @@ function About() {
       ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ deltay: 0.175 }}
+      transition={{ delay: 0.175 }}
       className="mb-28 max-w-[45rem] scroll-mt-28 leading-8 sm:mb-40 text-center"
       id="about"
     >
