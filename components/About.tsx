@@ -18,10 +18,32 @@ function About() {
       id="about"
     >
       <Sectionheading>About me</Sectionheading>
-      <p className="mb-3">
-        <span>Fullstack Developer</span> with a passion for building <span className="italic">scalable, user-friendly web applications</span> using the <span className="font-bold">MERN stack</span>.<br />
-    Skilled in crafting <span className="italic">seamless front-end experiences</span> and <span className="italic">robust back-end systems</span>, with a focus on <span className="font-bold">clean code</span> and <span className="font-bold">modern technologies</span>.<br />
-    <span className="italic">Always learning</span>, <span className="italic">always building</span>, and always pushing the boundaries of what’s possible with code.
+      <p className="mb-3 text-gray-700 leading-relaxed">
+        I'm a <span className="font-bold">Full Stack Developer</span> passionate
+        about building
+        <span className="italic">
+          {" "}
+          modern, scalable, and user-friendly web applications
+        </span>
+        using both the <span className="font-bold">MERN</span> and{" "}
+        <span className="font-bold">.NET</span> ecosystems.
+        <br />I enjoy crafting{" "}
+        <span className="italic">
+          smooth, interactive front-end experiences
+        </span>
+        with React, Next.js, and Angular, and developing
+        <span className="italic"> robust, clean back-end systems</span> using
+        Node.js, Express, and .NET Web APIs.
+        <br />
+        With strong foundations in <span className="font-bold">OOP</span>,
+        <span className="font-bold"> SOLID principles</span>, and database
+        design, I focus on writing{" "}
+        <span className="font-bold">high-quality, maintainable code </span>
+        that solves real problems.
+        <br />
+        <span className="italic">Always learning</span>,
+        <span className="italic">always building</span>, and always pushing the
+        boundaries of what’s possible with code
       </p>
     </motion.section>
   );

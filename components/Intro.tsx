@@ -63,48 +63,58 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium sm:text-4xl !leading-[1.5]"
       >
-                Hi ,I'm{" "}
-        <span className=" font-bold">Abanoub</span>, a{" "}
+        Hi ,I'm <span className=" font-bold">Abanoub</span>, a{" "}
         <span className=" italic"> Full-Stack Developer.</span>
-     </motion.p>
+      </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="flex  px-4 text-lg font-medium sm:flex-row flex-col justify-center items-center gap-2"
+        className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 px-4 text-lg font-medium sm:flex-row flex-col"
       >
         <Link
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
-          className="  group bg-gray-800 text-white px-7 py-3 flex items-center gap-2  outline-none  hover:scale-110 hover:bg-gray-950  transition-all active:scale-105 rounded-full"
+          className="group bg-gray-800 text-white px-7 py-3 flex items-center gap-2 outline-none 
+    hover:bg-gray-950 transition-all active:scale-105 rounded-full
+    hover:translate-y-[-2px]"
           href="#contact"
         >
-          {" "}
           contact me here
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-all " />
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition-all" />
         </Link>
 
         <a
           href="/CV.pdf"
           download={true}
-          className="bg-white outline-none  group hover:scale-110   transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center cursor-pointer borderblack gap-2 dark:text-white/60 dark:bg-white/20 "
+          className="bg-white outline-none group transition-all active:scale-105 
+    hover:text-gray-950 rounded-full text-gray-800 px-7 py-3 flex items-center 
+    cursor-pointer borderblack gap-2 dark:text-white/60 dark:bg-white/20
+    hover:translate-y-[-2px]"
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition-all " />
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition-all" />
         </a>
+
         <a
           href="https://www.linkedin.com/in/abanoub-milad-7941a020a/"
           target="_blank"
-          className="bg-white dark:text-white/60  outline-none borderblack hover:scale-110 hover:text-gray-950  transition-all active:scale-105 rounded-full dark:bg-white/20 text-gray-700 p-4  flex items-center  cursor-pointer gap-2 "
+          className="bg-white dark:text-white/60 outline-none borderblack transition-all 
+    active:scale-105 hover:text-gray-950 rounded-full dark:bg-white/20 
+    text-gray-700 p-4 flex items-center cursor-pointer gap-2 hover:translate-y-[-2px]"
         >
           <BsLinkedin />
         </a>
+
         <a
           href="https://github.com/Abanoub64/"
           target="_blank"
-          className="bg-white  dark:text-white/60 text-[1.5rem] outline-none  hover:scale-110 borderblack dark:bg-white/20  transition-all active:scale-105 hover:text-gray-950 rounded-full text-gray-700 p-4  cursor-pointer flex items-center gap-2 "
+          className="bg-white dark:text-white/60 text-[1.5rem] outline-none 
+    borderblack dark:bg-white/20 transition-all active:scale-105 
+    hover:text-gray-950 rounded-full text-gray-700 p-4 cursor-pointer 
+    flex items-center gap-2 hover:translate-y-[-2px]"
         >
           <FaGithubSquare />
         </a>
