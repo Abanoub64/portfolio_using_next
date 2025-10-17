@@ -55,7 +55,7 @@ function Contact() {
           placeholder="Your message"
           required
           maxLength={500}
-          className="h-52 border border-black dark:outline-none  dark:bg-white dark:bg-opacity-80  dark:focus:bg-opacity-100 transition-all  p-4  my-3 rounded-lg"
+          className="h-52 border border-black dark:outline-none  dark:bg-white dark:bg-opacity-80  dark:focus:bg-opacity-100 transition-all dark:text-black/50 p-4  my-3 rounded-lg"
         />
         <Submitbtn pending={pending} />
       </form>
