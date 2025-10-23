@@ -95,7 +95,7 @@ export const projectsData = [
       "Resend",
     ],
     imageUrl: corpcommentImg,
-    url: "https://portfolio-using-next.vercel.app/",
+    url: "https://portfolio-using-next-9jps.vercel.app/",
   },
   {
     title: "St-demiana",
