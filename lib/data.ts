@@ -1,15 +1,12 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import Netflex from "@/public/Netflex.png";
 import Movie from "@/public/Movie_app.png";
-import Store from "@/public/Store.PNG";
-import Admin from "@/public/Admin.PNG";
-import Chatapp from "@/public/Chat_app.PNG";
+import Store from "@/public/Store.png";
+import Admin from "@/public/Admin.png";
+import Chatapp from "@/public/Chat_app.png";
 // Icons for skills
 import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -30,8 +27,7 @@ import { SiFramer } from "react-icons/si";
 import { SiGit } from "react-icons/si";
 import { SiPostman } from "react-icons/si";
 import { AiOutlineMail } from "react-icons/ai";
-import { SiSolidity } from "react-icons/si"; // placeholder for SOLID/OOP icon (used as generic)
-import { SiVisualstudiocode } from "react-icons/si"; // optional, not used directly but kept as available
+import { SiSolidity } from "react-icons/si";
 
 export const links = [
   {
@@ -56,32 +52,32 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
+// export const experiencesData = [
+//   {
+//     title: "Graduated bootcamp",
+//     location: "Miami, FL",
+//     description:
+//       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+//     icon: React.createElement(LuGraduationCap),
+//     date: "2019",
+//   },
+//   {
+//     title: "Front-End Developer",
+//     location: "Orlando, FL",
+//     description:
+//       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+//     icon: React.createElement(CgWorkAlt),
+//     date: "2019 - 2021",
+//   },
+//   {
+//     title: "Full-Stack Developer",
+//     location: "Houston, TX",
+//     description:
+//       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+//     icon: React.createElement(FaReact),
+//     date: "2021 - present",
+//   },
+// ] as const;
 
 export const projectsData = [
   {
@@ -103,7 +99,7 @@ export const projectsData = [
   {
     title: "E-Commerce Admin Dashboard",
     description:
-      "Developed a fully responsive Admin Dashboard based on a Figma design using Next.js and TypeScript. Implemented reusable UI components with Shadcn UI and Tailwind CSS, and managed global state efficiently using Zustand. The dashboard includes optimized layouts, smooth navigation, and clean code architecture..",
+      "Built a responsive Admin Dashboard from a Figma design using Next.js, TypeScript, Shadcn UI, Tailwind CSS, and Zustand, with clean architecture and smooth, optimized navigation.",
     tags: [
       "React",
       "Next.js",
@@ -118,7 +114,7 @@ export const projectsData = [
   {
     title: "E-Commerce Client Store",
     description:
-      "Developed a fully responsive E-Commerce Client Store based on a Figma design using Next.js and TypeScript. Implemented reusable UI components with Shadcn UI, styled with Tailwind CSS, and used Zustand for global state management. The project includes product listings, filters, cart flow, and modern UX patterns.",
+      "Built a responsive E-Commerce Client Store from a Figma design using Next.js, TypeScript, Shadcn UI, Tailwind CSS, and Zustand, with product listings, filters, and a smooth cart flow.",
     tags: [
       "React",
       "Next.js",
@@ -133,10 +129,9 @@ export const projectsData = [
   {
     title: "Real Time Chat app",
     description:
-      "Built a full real-time chat application with custom JWT auth, Socket.io messaging, online status, typing indicators, image uploads, and welcome emails. Backend developed with Node.js, Express, MongoDB, and secure API practices; frontend built with React, Tailwind, DaisyUI, and Zustand.",
+      "Built a real-time chat app with JWT auth, Socket.io messaging, image uploads, and welcome emails using Node.js, Express, MongoDB, React, Tailwind, DaisyUI, and Zustand.",
     tags: [
       "React",
-      "Node.js",
       "Express.js",
       "MongoDB",
       "Socket.io",
@@ -144,7 +139,6 @@ export const projectsData = [
       "REST API",
       "Cloudinary ",
       "DaisyUI",
-      "Zustand",
     ],
     imageUrl: Chatapp,
     url: "https://realtime-chat-app-five-zeta.vercel.app/",
