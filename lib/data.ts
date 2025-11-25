@@ -9,7 +9,7 @@ import Netflex from "@/public/Netflex.png";
 import Movie from "@/public/Movie_app.png";
 import Store from "@/public/Store.PNG";
 import Admin from "@/public/Admin.PNG";
-import Chatapp from "@/public/Chat_app";
+import Chatapp from "@/public/Chat_app.PNG";
 // Icons for skills
 import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
