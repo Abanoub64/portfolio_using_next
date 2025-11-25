@@ -4,9 +4,9 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import Netflex from "@/public/Netflex.png";
 import Movie from "@/public/Movie_app.png";
-import Store from "@/public/Store.png";
-import Admin from "@/public/Admin.png";
-import Chatapp from "@/public/Chat_app.png";
+import Store from "@/public/Storep.png";
+import Admin from "@/public/Adminp.png";
+import Chatapp from "@/public/Chat_app_p.png";
 // Icons for skills
 import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
