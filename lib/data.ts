@@ -7,6 +7,9 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import Netflex from "@/public/Netflex.png";
 import Movie from "@/public/Movie_app.png";
+import Store from "@/public/Store.PNG";
+import Admin from "@/public/Admin.PNG";
+import Chatapp from "@/public/Chat_app";
 // Icons for skills
 import { SiJavascript } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
@@ -96,6 +99,55 @@ export const projectsData = [
     ],
     imageUrl: corpcommentImg,
     url: "https://portfolio-using-next-9jps.vercel.app/",
+  },
+  {
+    title: "E-Commerce Admin Dashboard",
+    description:
+      "Developed a fully responsive Admin Dashboard based on a Figma design using Next.js and TypeScript. Implemented reusable UI components with Shadcn UI and Tailwind CSS, and managed global state efficiently using Zustand. The dashboard includes optimized layouts, smooth navigation, and clean code architecture..",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zustand",
+    ],
+    imageUrl: Admin,
+    url: "https://e-commerce-admin-dashboard-front-en.vercel.app/",
+  },
+  {
+    title: "E-Commerce Client Store",
+    description:
+      "Developed a fully responsive E-Commerce Client Store based on a Figma design using Next.js and TypeScript. Implemented reusable UI components with Shadcn UI, styled with Tailwind CSS, and used Zustand for global state management. The project includes product listings, filters, cart flow, and modern UX patterns.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zustand",
+    ],
+    imageUrl: Store,
+    url: "https://e-commerce-go-cart-front-end.vercel.app/",
+  },
+  {
+    title: "Real Time Chat app",
+    description:
+      "Built a full real-time chat application with custom JWT auth, Socket.io messaging, online status, typing indicators, image uploads, and welcome emails. Backend developed with Node.js, Express, MongoDB, and secure API practices; frontend built with React, Tailwind, DaisyUI, and Zustand.",
+    tags: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "JWT Authentication",
+      "REST API",
+      "Cloudinary ",
+      "DaisyUI",
+      "Zustand",
+    ],
+    imageUrl: Chatapp,
+    url: "https://realtime-chat-app-five-zeta.vercel.app/",
   },
   {
     title: "St-demiana",
