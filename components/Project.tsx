@@ -30,7 +30,7 @@ export default function Project({
       ref={ref}
       className=" mb-3  group sm:mb-8 last:mb-8"
     >
-      <section className=" dark:bg-white/10 dark:hover:bg-white/20 rounded-lg relative sm:group:even:pl-8  dark:text-white bg-gray-100 max-w-[42rem] border border-black/5 sm:h-[20rem] overflow-hidden    hover:bg-gray-200 transition  sm:pr-8 cursor-pointer ">
+      <section className=" dark:bg-white/10 dark:hover:bg-white/20 rounded-lg relative sm:group:even:pl-8  dark:text-white bg-gray-100 max-w-[42rem] border border-black/5 sm:min-h-[20rem] overflow-hidden    hover:bg-gray-200 transition  sm:pr-8 cursor-pointer ">
         <a
           href={url}
           target="_blank"
