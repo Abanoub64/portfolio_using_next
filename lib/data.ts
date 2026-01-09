@@ -6,6 +6,9 @@ import Netflex from "@/public/Netflex.png";
 import Movie from "@/public/Movie_app.png";
 import Store from "@/public/Storep.png";
 import Admin from "@/public/Adminp.png";
+import Sharks_admin from "@/public/Sharks_admin.png";
+import Sharks_Branch from "@/public/Sharks_Branch_Dashboard.png";
+import Sharks_Site from "@/public/Sharks_site.png";
 import Chatapp from "@/public/Chat_app_p.png";
 // Icons for skills
 import { SiJavascript } from "react-icons/si";
@@ -81,6 +84,70 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "Branch Management & Live Queue System (Freelance – Sharks)",
+    description:
+      "Implemented a branch-level dashboard featuring a real-time queue management system with a live display screen for in-branch customers. Added dynamic customer feedback and ratings per branch, enabling managers to monitor service quality and operational performance in real time.",
+    tags: [
+      "Angular",
+      "ASP.NET Core Web API",
+      "MS SQL Server",
+      "Queue Management",
+      "Live Display Screen",
+      "Feedback System",
+    ],
+    imageUrl: Sharks_Branch,
+    url: "https://shark-s-management-system.vercel.app/",
+  },
+
+  {
+    title: "Dynamic & Scalable Admin Dashboard (Freelance – Sharks)",
+    description:
+      "Built a dynamic and scalable Admin Dashboard for a real freelance client to manage branches, barbers, products, orders, bookings, users, and roles. Designed with modular architecture, role-based access control, and secure authentication to support system scalability and future expansion.",
+    tags: [
+      "Angular",
+      "ASP.NET Core Web API",
+      "MS SQL Server",
+      "Scalable Architecture",
+      "Role-Based Access Control",
+      "Authentication & Authorization",
+    ],
+    imageUrl: Sharks_admin,
+    url: "https://shark-s-management-system.vercel.app/",
+  },
+
+  {
+    title: "Barbershop Booking & E-Commerce Website (Freelance – Sharks)",
+    description:
+      "Developed a production-ready customer-facing website delivered to a real freelance client, allowing users to browse services and products, book appointments, join live queues, and place online orders. Integrated AI-powered image editing to preview hairstyles and modifications before booking.",
+    tags: [
+      "Angular",
+      "TypeScript",
+      "AI Integration",
+      "Image Processing",
+      "E-Commerce",
+      "Booking System",
+    ],
+    imageUrl: Sharks_Site,
+    url: "https://shark-s-management-system.vercel.app/",
+  },
+
+  {
+    title: "E-Commerce Admin Dashboard",
+    description:
+      "Built a responsive Admin Dashboard from a Figma design using Next.js, TypeScript, Shadcn UI, Tailwind CSS, and Zustand, with clean architecture and smooth, optimized navigation.",
+    tags: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Zustand",
+    ],
+    imageUrl: Admin,
+    url: "https://e-commerce-admin-dashboard-front-en.vercel.app/",
+  },
+
+  {
     title: "My Portfolio",
     description:
       "I designed and developed this portfolio to showcase my skills and projects as a Fullstack MERN Developer. Built with modern technologies, it features seamless animations, responsive design, and email integration for contact forms.",
@@ -144,7 +211,7 @@ export const projectsData = [
     url: "https://realtime-chat-app-five-zeta.vercel.app/",
   },
   {
-    title: "St-demiana",
+    title: "St-demiana (freelance)",
     description:
       "Built a church website for managing parishioner data with user-friendly forms, access levels, and a scalable cloud database. Streamlines communication, data management, and reporting for the church community.",
     tags: [
