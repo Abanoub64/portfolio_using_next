@@ -86,7 +86,7 @@ export const projectsData = [
   {
     title: "Branch Management & Live Queue System (Freelance – Sharks)",
     description:
-      "Implemented a branch-level dashboard featuring a real-time queue management system with a live display screen for in-branch customers. Added dynamic customer feedback and ratings per branch, enabling managers to monitor service quality and operational performance in real time.",
+      "Branch-level dashboard with real-time queue management, live in-branch display screens, and dynamic customer feedback to monitor service quality in real time.",
     tags: [
       "Angular",
       "ASP.NET Core Web API",
@@ -102,7 +102,7 @@ export const projectsData = [
   {
     title: "Dynamic & Scalable Admin Dashboard (Freelance – Sharks)",
     description:
-      "Built a dynamic and scalable Admin Dashboard for a real freelance client to manage branches, barbers, products, orders, bookings, users, and roles. Designed with modular architecture, role-based access control, and secure authentication to support system scalability and future expansion.",
+      "Scalable Admin Dashboard for managing branches, users, bookings, orders, and roles with modular architecture and role-based access control.",
     tags: [
       "Angular",
       "ASP.NET Core Web API",
@@ -118,7 +118,7 @@ export const projectsData = [
   {
     title: "Barbershop Booking & E-Commerce Website (Freelance – Sharks)",
     description:
-      "Developed a production-ready customer-facing website delivered to a real freelance client, allowing users to browse services and products, book appointments, join live queues, and place online orders. Integrated AI-powered image editing to preview hairstyles and modifications before booking.",
+      "Customer-facing website for booking, live queue access, and online orders, featuring AI-powered hairstyle preview before booking.",
     tags: [
       "Angular",
       "TypeScript",
