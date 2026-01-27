@@ -132,22 +132,6 @@ export const projectsData = [
   },
 
   {
-    title: "E-Commerce Admin Dashboard",
-    description:
-      "Built a responsive Admin Dashboard from a Figma design using Next.js, TypeScript, Shadcn UI, Tailwind CSS, and Zustand, with clean architecture and smooth, optimized navigation.",
-    tags: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Zustand",
-    ],
-    imageUrl: Admin,
-    url: "https://e-commerce-admin-dashboard-front-en.vercel.app/",
-  },
-
-  {
     title: "My Portfolio",
     description:
       "I designed and developed this portfolio to showcase my skills and projects as a Fullstack MERN Developer. Built with modern technologies, it features seamless animations, responsive design, and email integration for contact forms.",

@@ -19,31 +19,32 @@ function About() {
     >
       <Sectionheading>About me</Sectionheading>
       <p className="mb-3 text-gray-700 leading-relaxed">
-        I'm a <span className="font-bold">Full Stack Developer</span> passionate
-        about building
+        I'm a <span className="font-bold">Full Stack .NET Developer</span>{" "}
+        passionate about building
         <span className="italic">
           {" "}
-          modern, scalable, and user-friendly applications
+          scalable, maintainable, and user-friendly applications
         </span>{" "}
-        using both the <span className="font-bold">MERN</span> and{" "}
-        <span className="font-bold">.NET</span> ecosystems.
-        <br />I enjoy crafting{" "}
+        with a strong focus on the{" "}
+        <span className="font-bold">.NET ecosystem</span>.
+        <br />I specialize in developing
+        <span className="italic"> clean, robust back-end systems</span> using
+        <span className="font-bold"> ASP.NET Core Web APIs</span>, along with
+        crafting
         <span className="italic">
-          smooth, interactive front-end experiences
+          {" "}
+          smooth and interactive front-end experiences
         </span>
-        with React, Next.js, and Angular, and developing
-        <span className="italic"> robust, clean back-end systems</span> using
-        Node.js, Express, and .NET Web APIs.
+        using Angular and modern web technologies.
+        <br />I also have hands-on experience with the
+        <span className="font-bold"> MERN stack</span>, which allows me to work
+        comfortably across different architectures and tech stacks when needed.
         <br />
         With strong foundations in <span className="font-bold">OOP</span>,
         <span className="font-bold"> SOLID principles</span>, and database
-        design, I focus on writing{" "}
-        <span className="font-bold">high-quality, maintainable code </span>
-        that solves real problems.
-        <br />
-        <span className="italic">Always learning</span>,
-        <span className="italic">always building</span>, and always pushing the
-        boundaries of what’s possible with code
+        design, I focus on writing
+        <span className="font-bold"> high-quality, maintainable code</span> that
+        solves real-world problems.
       </p>
     </motion.section>
   );
